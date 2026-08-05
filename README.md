@@ -6,8 +6,7 @@ https://github.com/MortenGregersen/Bagbutik.
 
 The package exposes the same modular products and module names as the source
 package. Select only the product your target uses, such as `BagbutikUsers` or
-`BagbutikAppStore`. The source only `Bagbutik` umbrella product is intentionally
-not included here.
+`BagbutikAppStore`.
 
 Version 24 requires Xcode 16 or newer and supports macOS 12, iOS 15, tvOS 15,
 watchOS 9, and visionOS 1 or newer. The binary release contains static
