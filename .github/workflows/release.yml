@@ -33,6 +33,10 @@ jobs:
         working-directory: source
         run: ./scripts/build-xcframework.sh
 
+      - name: Record source revision
+        id: source-revision
+        run: echo "sha=$(git -C source rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
       - name: Update package checksums
         run: ./scripts/update-package-checksums.sh source/output "${{ inputs.release_tag }}"
 
@@ -52,4 +56,8 @@ jobs:
         with:
           tag_name: ${{ inputs.release_tag }}
           generate_release_notes: true
+          body: |
+            Source repository: https://github.com/MortenGregersen/Bagbutik
+            Source ref: `${{ inputs.source_ref }}`
+            Source commit: `${{ steps.source-revision.outputs.sha }}`
           files: source/output/*.xcframework.zip
