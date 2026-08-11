@@ -11,6 +11,10 @@ on:
         description: Binary release tag
         required: true
         default: 24.0.0
+      prerelease:
+        description: Whether to create a binary pre release
+        required: true
+        default: false
 
 permissions:
   contents: write
@@ -55,9 +59,11 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ inputs.release_tag }}
+          prerelease: ${{ inputs.prerelease == 'true' }}
           generate_release_notes: true
           body: |
             Source repository: https://github.com/MortenGregersen/Bagbutik
             Source ref: `${{ inputs.source_ref }}`
             Source commit: `${{ steps.source-revision.outputs.sha }}`
+            Pre release: ${{ inputs.prerelease }}
           files: source/output/*.xcframework.zip
