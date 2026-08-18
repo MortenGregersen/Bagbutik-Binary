@@ -2,7 +2,7 @@
 
 import PackageDescription
 
-let releaseTag = "24.0.0"
+let releaseTag = "24.0.2"
 let releaseBaseURL = "https://github.com/MortenGregersen/Bagbutik-Binary/releases/download/\(releaseTag)"
 
 func binaryTarget(_ name: String, checksum: String) -> Target {
@@ -58,25 +58,25 @@ let package = Package(
         ]),
     ],
     targets: [
-        binaryTarget("BagbutikCore", checksum: "aff924be3b05b06c1ce0afff5d7f1a916860ae4b27c56255580eccebfa43a6c3"),
-        binaryTarget("BagbutikModelsShared", checksum: "2ee796906f5cfc03952bc4ca6d1f196c042b9ca8e83acbc02e5affecb1b46c73"),
-        binaryTarget("BagbutikAppStoreModels", checksum: "df2b680efd30e7c19e6d79d52b10ee84a45c36ec0cf810ff9929a57c7da68e07"),
-        binaryTarget("BagbutikAppStore", checksum: "9ae27de7a867a2b558e076dfd2bfe05cb31f30d8ce7d9133496ba8dbcf601197"),
-        binaryTarget("BagbutikGameCenterModels", checksum: "266f626097b0452f92cb8aec963039611cd2d5ff905e5b6cbec581febd68a035"),
-        binaryTarget("BagbutikGameCenter", checksum: "71c91a8b3c9474274f51209d40f14c73c227f47eeba08bd34a57c690749bafc4"),
-        binaryTarget("BagbutikMarketplacesModels", checksum: "86a8f8a1b4f62c87abbcc06b2da2a80a6bec49e566d61d6efcd5d668f6fdbf6c"),
-        binaryTarget("BagbutikMarketplaces", checksum: "7c8f5f3fa4a2464d4e642de1316b0b713079608b1832d8a0522d2e4a6c7181f8"),
-        binaryTarget("BagbutikProvisioningModels", checksum: "286f38806975340c8f76262d95c10f4163bca928e48093ebcc1502bae26c741e"),
-        binaryTarget("BagbutikProvisioning", checksum: "0f1aef50f5bffefd7fa72069dd5865d70e5d5bda5add26fe595a5b08eccc6730"),
-        binaryTarget("BagbutikReportingModels", checksum: "3d04e2ae7da0bd4eb673e6c9d1617eff6b6df90ec1ed60d0f88e29a7e79bbbd8"),
-        binaryTarget("BagbutikReporting", checksum: "c33da367cbdc5f084ad16f9ac697eba5cef7409fda4e7f91a95c65e7e52a47b1"),
-        binaryTarget("BagbutikTestFlightModels", checksum: "1c941c7d12e11e6132b82eab381635c7f3099a2ae457b50a2a9928afe1c5c207"),
-        binaryTarget("BagbutikTestFlight", checksum: "e30ac2c8ca0f1de13c147f8a896a2963ffe393f7264bd4ce1b9b921f7172bef0"),
-        binaryTarget("BagbutikUsersModels", checksum: "7051e0978156b163d2e379506861d9d5d25d0d4c967ca7f97c5edc46353cca8c"),
-        binaryTarget("BagbutikUsers", checksum: "60534d86faadace9896b5ae7a1511a2f1aa39995efcf7868d50b7a069c306c72"),
-        binaryTarget("BagbutikWebhooksModels", checksum: "6144b1d4f236e1ebba896a3ae06b602ca03312713639589f45cf4302d6af8868"),
-        binaryTarget("BagbutikWebhooks", checksum: "fcd0f25f3c21de884b1cab96175c28d9aee1abf8db315f59feefe0954dcc89ab"),
-        binaryTarget("BagbutikXcodeCloudModels", checksum: "05967680ab6411851b96e1ae444d17a4f6a3a6b0fc321c50f5216fed9c204f0b"),
-        binaryTarget("BagbutikXcodeCloud", checksum: "5442c6709c1485e71198a2307f1c12722d138beba153e6e0ec8bbab6969c3ccb"),
+        binaryTarget("BagbutikCore", checksum: "17e4050e83d9333d8f51eae3b7220951ca1484cbd6058c462c51f22cff5727d1"),
+        binaryTarget("BagbutikModelsShared", checksum: "a8d2d024b599fecae0a59ba9373bc786e741fcb642289e2262c0abaeedc9f073"),
+        binaryTarget("BagbutikAppStoreModels", checksum: "42e2d15afaeae329de731e36773373c939f8827e474c02c3876e3ae0c61f6eb9"),
+        binaryTarget("BagbutikAppStore", checksum: "06cb3c701d4fe09cc0337d3bd504965e38a82cc76fcdafa607f29d233f204d69"),
+        binaryTarget("BagbutikGameCenterModels", checksum: "7ea036b1d60e991b73d3f2fc681d6c82be9a55df7e755e241703cc4e503d1cec"),
+        binaryTarget("BagbutikGameCenter", checksum: "d342e7901cd0449cd44819a22c73654fc51a769c0715a9502078ddd8a9ba0b63"),
+        binaryTarget("BagbutikMarketplacesModels", checksum: "8a95934332b9a86d1d5543814fab8ab4cf0164fdc8bb4b3d8f1056ec2811b19a"),
+        binaryTarget("BagbutikMarketplaces", checksum: "7b8a160151f65917d379ec731f39c655366e5526db6441712bf1a7410144c67f"),
+        binaryTarget("BagbutikProvisioningModels", checksum: "6ecb251cb67fee7580dadfdeba36886d93e5bd012be2d3af1e5fbe9645218000"),
+        binaryTarget("BagbutikProvisioning", checksum: "45fcd2cf4b0937602704b6e6752dd54231f6dded6133d067222fdfa73424515e"),
+        binaryTarget("BagbutikReportingModels", checksum: "ffd2dde00fb537a08f8f176abdce3a72935b2fdaf73197e20dcd81634ef92f97"),
+        binaryTarget("BagbutikReporting", checksum: "0a41f1e13a9fc55c75a3e2149dccec623ebcc85b4c38c4f01641eef9c1447407"),
+        binaryTarget("BagbutikTestFlightModels", checksum: "8642990a02f6370b1876d906ea90e7ce577d621269d48ba36b9f8688ba44bd0f"),
+        binaryTarget("BagbutikTestFlight", checksum: "6af9a301769beef973b696f8a269b7bd96d36b8d39bbefc7932d5f0f19c4f272"),
+        binaryTarget("BagbutikUsersModels", checksum: "e2690b2738a19ffb589dfcd8db76ba9b2ed9c9a47450572304bd70c16cadb56a"),
+        binaryTarget("BagbutikUsers", checksum: "5ef0b0e17b8eadfa2b70a7aad4950ebaff449d2156c9980934c325e438a55291"),
+        binaryTarget("BagbutikWebhooksModels", checksum: "941ffec38338ae2bc716296e6149e70d696ceb1c03ecd0e8bf548f5074d8d140"),
+        binaryTarget("BagbutikWebhooks", checksum: "f72ce8e6066296944cc6dd252c12da363050bd70f9ff2ff63d8c5fe2e97a8666"),
+        binaryTarget("BagbutikXcodeCloudModels", checksum: "a3ecf5a5b0cb75dc85950584247151886166fc87710029abeb36dd1d228c5ffc"),
+        binaryTarget("BagbutikXcodeCloud", checksum: "4ba57efb263b39acf50b662a5566445452b17acd0e6cb4390768b976fc509dee"),
     ]
 )
