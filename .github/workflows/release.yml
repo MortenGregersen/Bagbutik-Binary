@@ -36,7 +36,7 @@ jobs:
       - name: Patch source XCFramework metadata validation
         run: |
           if grep -q -- "-type f -name Info.plist -print0" source/scripts/build-xcframework.sh; then
-            perl -0pi -e "s|-type f -name Info\\.plist -print0|-type f -path '*.framework/Info.plist' -print0|" source/scripts/build-xcframework.sh
+            perl -0pi -e "s|-type f -name Info\\.plist -print0|-type f -path '*/*.framework/Info.plist' -print0|" source/scripts/build-xcframework.sh
           fi
 
       - name: Build static XCFrameworks
